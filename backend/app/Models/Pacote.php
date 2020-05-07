@@ -8,14 +8,14 @@ class Pacote extends Model
 {   
     protected $table = 'pacote';
      
-    protected $fillable = [
-        'nome','valor','dataInicio','dataFim','descricao','urlImagem','telefone','site'
-    ];
+    // protected $fillable = [
+    //     'nome','valor','dataInicio','dataFim','descricao','urlImagem','telefone','site'
+    // ];
  
-    protected $casts = [
-        'dataInicio' => 'Timestamp',
-        'dataFim' => 'Timestamp'
-    ];
+    // protected $casts = [
+    //     'dataInicio' => 'Timestamp',
+    //     'dataFim' => 'Timestamp'
+    // ];
  
     public $timestamps = false;
 }

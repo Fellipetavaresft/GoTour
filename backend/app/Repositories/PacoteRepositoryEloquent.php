@@ -19,12 +19,13 @@ class PacoteRepositoryEloquent implements PacoteRepositoryInterface
     {
         return $this->pacote
         ->select(
-            'id',
-            'nome',
-            'valor',
-            'dataInicio',
-            'dataFim',
-            'urlImagem'
+            'id'
+            // 'id',
+            // 'nome',
+            // 'valor',
+            // 'dataInicio',
+            // 'dataFim',
+            // 'urlImagem'
         )->get();
     }
      

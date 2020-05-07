@@ -11,12 +11,7 @@ class PacoteController extends Controller
 {
     private $pacoteService;
  
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
- 
+
     public function __construct(PacoteService $pacoteService)
     {
         $this->pacoteService = $pacoteService;

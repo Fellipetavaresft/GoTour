@@ -20,17 +20,17 @@ class PacoteService
  
     public function buscarTodosPacotes()
     {        
-        try {
+        // try {
             $pacotes = $this->pacoteRepository->buscarTodosPacotes();
      
-            if (count($pacotes) > 0) {
-                return response()->json($pacotes, Response::HTTP_OK);                
-            } else {
-                return response()->json([], Response::HTTP_OK);          
-            } 
-        } catch(QueryException $e) {
-            return response()->json(['erro'=> 'Erro de conexão com o banco'], Response::HTTP_INTERNAL_SERVER_ERROR);
-        }
+        //     if (count($pacotes) > 0) {
+                return response()->json($pacotes);                
+        //     } else {
+        //         return response()->json([], Response::HTTP_OK);          
+        //     } 
+        // } catch(QueryException $e) {
+        //     return response()->json(['erro'=> 'Erro de conexão com o banco'], Response::HTTP_INTERNAL_SERVER_ERROR);
+        // }
     }
      
     public function buscarPacote($id)
